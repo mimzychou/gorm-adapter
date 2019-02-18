@@ -33,10 +33,11 @@ type CasbinRule struct {
 	V4    string `gorm:"size:100"`
 	V5    string `gorm:"size:100"`
 }
-
+/*
 func (c *CasbinRule) TableName() string{
 	return "casbin_rule" //as Gorm keeps table names are plural, and we love consistency
 }
+*/
 
 // Adapter represents the Gorm adapter for policy storage.
 type Adapter struct {
